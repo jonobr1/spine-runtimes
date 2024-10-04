@@ -68,7 +68,7 @@ export class Shader implements Disposable, Restorable {
 			this.vs = this.compileShader(gl.VERTEX_SHADER, this.vertexShader);
 			if (!this.vs) throw new Error("Couldn't compile vertex shader.");
 			this.fs = this.compileShader(gl.FRAGMENT_SHADER, this.fragmentShader);
-			if (!this.fs) throw new Error("Couldn#t compile fragment shader.");
+			if (!this.fs) throw new Error("Couldn't compile fragment shader.");
 			this.program = this.compileProgram(this.vs, this.fs);
 		} catch (e) {
 			this.dispose();
